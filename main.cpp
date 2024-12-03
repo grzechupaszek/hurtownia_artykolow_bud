@@ -6,6 +6,7 @@ int main(){
     cout<<"Aplikacja hurtowni budowlanej\n";
     cout<<"qpa\n";
     cin>>k;
+    cout << "lol";
     return 0;
 
 }
