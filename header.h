@@ -10,7 +10,7 @@ class Towar{
     int ilosc;
 };
 
-class Kient{
+class Klient{
     int id_klienta = NULL;
     string imie;
     string nazwisko;
