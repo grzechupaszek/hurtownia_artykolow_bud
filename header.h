@@ -67,3 +67,4 @@ class Karta{
 class IPlatnosc{
     bool autoryzacja;
 };
+//mikolaj mozeby dodac klase setting up account?
