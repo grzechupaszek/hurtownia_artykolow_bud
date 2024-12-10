@@ -45,3 +45,4 @@ class Zamowienie{
 };
 
 //mikolaj mozeby
+//komentarz
