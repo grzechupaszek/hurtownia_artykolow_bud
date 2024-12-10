@@ -1,5 +1,8 @@
 #include <iostream>
+#include <string>
 using namespace std;
+//logowanie do systemu
+
 
 int main(){
     int k=0;

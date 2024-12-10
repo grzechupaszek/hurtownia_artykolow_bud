@@ -44,3 +44,4 @@ class Zamowienie{
     float wartosc_zamowienia;
 };
 
+//mikolaj mozeby dodac klase setting up account?
