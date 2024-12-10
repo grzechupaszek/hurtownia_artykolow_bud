@@ -10,7 +10,7 @@ class Towar{
     int ilosc;
 };
 
-class Kient{
+class Klient{
     int id_klienta = NULL;
     string imie;
     string nazwisko;
@@ -44,3 +44,26 @@ class Zamowienie{
     float wartosc_zamowienia;
 };
 
+class ZarzadzanieKontem{
+    void zaloz_konto();
+    Klient utworz_klienta();
+    string zmien_haslo();
+};
+
+class Platnosc{
+    float kwota;
+};
+
+class Gotowka{
+    float gotowka;
+};
+
+class Karta{
+    long numer_karty;
+    string typ_karty;
+    int data_wygasniecia;
+};
+
+class IPlatnosc{
+    bool autoryzacja;
+};
