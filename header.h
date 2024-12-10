@@ -68,3 +68,4 @@ class IPlatnosc{
     bool autoryzacja;
 };
 //mikolaj mozeby dodac klase setting up account?
+//Mikolaj: lepiej uzyc klasy zarzadzanie kontem i metody zaloz_konto
