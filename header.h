@@ -70,4 +70,4 @@ class IPlatnosc{
     bool autoryzacja;
 };
 
-//komentarzgdgdgdfd
+//komentarzgdgdgdfd//komentarz
