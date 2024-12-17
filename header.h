@@ -78,7 +78,7 @@ void ZarzadzanieKontem::zaloz_konto(){
         cout<<"powtorz haslo: "<<endl;
         cin>> haslo1;
         if (haslo==haslo1){//zapisz do ppliku nowego uzytkownika}
-        if (haslo!=haslo1){cout<<"podales zle drugie haslo debilu";}
+        if (haslo!=haslo1){cout<<"podales zle drugie haslo";}
         else continue;
     }
 }
