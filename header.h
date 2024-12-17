@@ -62,26 +62,7 @@ class ZarzadzanieKontem{
     string zmien_haslo();
 
 };
-void ZarzadzanieKontem::zaloz_konto(){
-    vector<string> login, haslo, haslo1;
-    cout<<"Podaj login: ";
-    cin>>login;
-    for (;;){
-    if (/*nie ma w bazie danych loginu to przejdz dalej*/)
-        continue;
-    else (/*wyswietl error wroc do poczatku tutaj petle robimy*/)
-    {/*dochodzi do sigmy sigma boy sigma boy sigma boy*/}
-    }
-    for(;;){
-        cout<<"podaj haslo: "<<endl;
-        cin>>haslo;
-        cout<<"powtorz haslo: "<<endl;
-        cin>> haslo1;
-        if (haslo==haslo1){//zapisz do ppliku nowego uzytkownika}
-        if (haslo!=haslo1){cout<<"podales zle drugie haslo";}
-        else continue;
-    }
-}
+
 class Platnosc{
     float kwota;
 };
