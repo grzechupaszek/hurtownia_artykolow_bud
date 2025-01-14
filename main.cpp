@@ -13,27 +13,26 @@ using namespace std;
 
 //Funkcja inicjalizująca bazę danych produktów
 
-bool initDatabaseOfProducts(sqlite3*& db){
+ bool initDatabaseOfProducts(sqlite3*& db){
     int r = sqlite3_open("products.db", &db);
-    if (r != SQLITE_OK) {
-        cerr << "Nie można otworzyć bazy danych: " << sqlite3_errmsg(db) << endl;
-        return false;
-    }
+     if (r != SQLITE_OK) {
+         cerr << "Nie można otworzyć bazy danych: " << sqlite3_errmsg(db) << endl;
+         return false;
+     }
 
-    const char* sql = "CREATE TABLE IF NOT EXISTS products ("
-                      "product_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                      "product_name TEXT NOT NULL UNIQUE);";
+     const char* sql = "CREATE TABLE IF NOT EXISTS products ("
+                       "product_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                       "product_name TEXT NOT NULL UNIQUE);";
 
-    char* errMsg = nullptr;
-    r = sqlite3_exec(db, sql, nullptr, nullptr, &errMsg);
-    if (r != SQLITE_OK) {
-        cerr << "Błąd tworzenia tabeli: " << errMsg << endl;
-        sqlite3_free(errMsg);
-        return false;
-    }
-
-    return true;
-}
+     char* errMsg = nullptr;
+     r = sqlite3_exec(db, sql, nullptr, nullptr, &errMsg);
+     if (r != SQLITE_OK) {
+         cerr << "Błąd tworzenia tabeli: " << errMsg << endl;
+         sqlite3_free(errMsg);
+         return false;
+     }
+     return true;
+ }
 
 
 // Funkcja inicjalizująca bazę danych i tworząca tabelę użytkowników, jeśli jej nie ma
@@ -167,7 +166,7 @@ int main() {
                     do {
                         cout<<"0. Wyloguj\n1. Sprawdź czy towar jest w bazie\n2. Dodaj produkty do bazy danych\n";
                         cin>>choice;
-                    }while (choice != 0)
+                    }while (choice != 0);
                     cout<<"Wylogowano.\n";
                 }
                 else if(login == "kasjer"){
@@ -175,7 +174,7 @@ int main() {
                     do {
                         cout<<"0. Wyloguj\n1. Sprawdź czy klient jest w bazie\n2. Zeskanuj produkty\n";
                         cin>>choice;
-                    }while (choice != 0)
+                    }while (choice != 0);
                     cout<<"Wylogowano.\n";
                 }
                 else {
